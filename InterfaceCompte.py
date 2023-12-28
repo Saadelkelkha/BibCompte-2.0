@@ -64,7 +64,7 @@ def Creation_COMPTE():
     for column in ("Numero", "Proprietaire", "SoldeIntial", "Taux interet", "Montant Decouvert"):
         tree.column(column, width=100)
 
-    # Insert data from the "compte" dictionary
+    # Insert data from the json fichier
     with open("data.json", "r") as file :
         data = json.load(file)
     
@@ -167,7 +167,7 @@ tree.heading("Montant Decouvert", text="Montant Decouvert")
 for column in ("Numero", "Proprietaire", "SoldeIntial", "Taux interet", "Montant Decouvert"):
     tree.column(column, width=100)
 
-# Insert data from the "compte" dictionary
+# Insert data from the json fichier
 with open("data.json", "r") as file :
     data = json.load(file)
     
